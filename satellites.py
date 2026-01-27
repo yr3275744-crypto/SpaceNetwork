@@ -5,4 +5,4 @@ class Satellite(space_network_lib.SpaceEntity):
         super().__init__(name, distance_from_earth)
 
     def receive_signal(self, packet: space_network_lib.Packet):
-        print(f"{self.name} Received: {packet}.")
+        print(f"[{self.name}] Received: {packet}.")
